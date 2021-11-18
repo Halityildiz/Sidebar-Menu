@@ -88,7 +88,7 @@ a {
 }
 
 .logo:hover {
-  background-color: #f13303;
+  background-color: red;
   transition: all 0.3s linear;
   transform: rotate(360deg);
 }
