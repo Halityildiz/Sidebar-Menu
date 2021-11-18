@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background: #eceef0;
+  line-height: 1.5;
+  font-size: 1rem;
+}
+section {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  grid-template-rows: 120px auto;
+}
+.header {
+  grid-column: 1/3;
+  grid-row: 0/1;
+  padding: 0.5rem 2rem;
+  background: #dde3e7;
+}
+
+.sidebar {
+  transform: translate(-100%);
+  grid-column: 0/1;
+  grid-row: 2/3;
+  height: 100vh;
+  background: #f2f6f8;
+}
+.show-sidebar {
+  transform: translate(0%);
+}
+.aside {
+  transform: translate(0%);
+  grid-column: 2/3;
+  grid-row: 2/3;
+  background: #eceef0;
+  padding: 2rem;
+  text-align: justify;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+.sidebar p {
+  font-size: 2rem;
+  margin: 1rem 10px 1rem;
+
+  display: inline-block;
+  font-family: cursive;
+  font-weight: bolder;
+  position: relative;
+  top: -30px;
+  color: #1a6aa2;
+}
+
+.sidebar-toggle {
+  font-size: 2rem;
+  background: transparent;
+  border-color: transparent;
+  color: #617d98;
+  transition: all 0.3s linear;
+  cursor: pointer;
+  position: relative;
+  top: 30px;
+  left: 97%;
+}
+
+.sidebar-toggle:hover {
+  color: #0b283d;
+  transform: rotate(-90deg);
+}
+
+.logo {
+  display: inline-block;
+  width: 80px;
+  border-radius: 30%;
+  background-color: #617d98;
+  padding: 5px;
+  margin: 10px 16px;
+}
+
+.logo:hover {
+  background-color: #f13303;
+  transition: all 0.3s linear;
+  transform: rotate(360deg);
+}
+
+.links a {
+  color: #1a6aa2;
+  font-weight: 800;
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  letter-spacing: 0.125rem;
+  margin-bottom: 2px;
+  display: block;
+  padding: 1rem;
+  transition: all 0.3s linear;
+  text-align: start;
+}
+
+.links a:hover {
+  color: orangered;
+  background-color: #dde3e7;
+}
+
+.social-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  text-align: center;
+  font-size: 2rem;
+  position: relative;
+  bottom: -20vh;
+}
+
+.social-icons i {
+  color: #1a6aa2;
+}
+.social-icons i:hover {
+  color: #84a2b8;
+}
